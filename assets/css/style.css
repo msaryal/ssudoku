@@ -1,0 +1,101 @@
+:root {
+    --primary: #4B7194;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.3;
+    background-color: #fcfcfc;
+}
+
+.container {
+    max-width: 670px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.search-input {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto 20px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.field {
+    width: min(100%, 300px);
+    text-align: center;
+}
+
+.field-hidden {
+    display: none;
+}
+
+.field-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.field-grid {
+    border: 3px solid #808080;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.field-row {
+    display: flex;
+}
+
+.field-row:nth-child(3),
+.field-row:nth-child(6) {
+    border-bottom: 3px solid #808080;
+}
+
+.field-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #808080;
+}
+
+.field-cell:nth-child(3),
+.field-cell:nth-child(6) {
+    border-right: 3px solid #808080;
+}
+
+.field-cell span {
+    color: var(--primary);
+}
