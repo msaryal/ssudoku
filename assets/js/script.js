@@ -32,16 +32,13 @@ searchInput.addEventListener('keyup', e => {
 
 async function getData()
 {
-    const response = await fetch('/ssudoku/file.txt');
-    const text = await response.text();
-
-    const data = text.split("\r\n");
+    const response = await fetch('/ssudoku/games.json');
+    const data = await response.json();
 
     data.forEach((row, n) => {
-
-        const level = row.split(" | ")[0];
-        const field = row.split(" | ")[1];
-        const answer = row.split(" | ")[2];
+        const level = row.level;
+        const field = row.input;
+        const answer = row.output;
 
         const elem = document.createElement('div');
         elem.classList.add('field','field-hidden');
