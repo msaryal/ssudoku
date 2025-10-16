@@ -49,7 +49,7 @@ async function getData()
         const elemTopCol1 = document.createElement('div');
         const elemTopNum = document.createElement('div');
         elemTopNum.classList.add('field-num');
-        elemTopNum.innerHTML = n;
+        elemTopNum.innerHTML = `<strong style="font-size:20px;">${n}</strong>`;
         const elemTopLevel = document.createElement('div');
         elemTopLevel.classList.add('field-level');
         elemTopLevel.innerHTML = levels[level];
