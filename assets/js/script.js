@@ -72,7 +72,7 @@ async function getData()
                 if(answer.charAt(index) != field.charAt(index)) {
                     fieldCell.innerHTML = `<span>${answer.charAt(index)}</span>`;
                 } else {
-                    fieldCell.innerHTML = `<strogn>${answer.charAt(index)}</strong>`;
+                    fieldCell.innerHTML = `<strong>${answer.charAt(index)}</strong>`;
                 }
                 
                 index++;
