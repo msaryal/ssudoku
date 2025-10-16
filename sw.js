@@ -7,7 +7,7 @@ self.addEventListener('install', (event) => {
             .open(CACHE)
             .then((cache) => cache.addAll([
                 '/ssudoku/',
-                '/ssudoku/index.php',
+                '/ssudoku/index.html',
                 '/ssudoku/file.txt',
                 '/ssudoku/assets/ico/favicon-96x96.png',
                 '/ssudoku/assets/ico/favicon.svg',
